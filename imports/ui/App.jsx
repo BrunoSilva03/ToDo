@@ -1,11 +1,18 @@
 import React from 'react';
-import { Hello } from './Hello.jsx';
-import { Info } from './Info.jsx';
+import { BrowserRouter } from 'react-router-dom';
+import RoutesApp from './routes';
 
-export const App = () => (
-  <div>
-    <h1>Welcome to Meteor!</h1>
-    <Hello/>
-    <Info/>
+
+export const App = () => {
+  return(
+
+    <div>
+    <h1>Tela de Login!</h1>
+    <BrowserRouter >
+      <RoutesApp />
+    </BrowserRouter>
+
+
   </div>
-);
+    )
+  };
